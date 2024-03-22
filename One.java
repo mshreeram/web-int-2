@@ -3,8 +3,8 @@ import java.util.*;
 
 class One {
   public static void main(String[] args) throws Exception {
-    Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "Lakshmi@123");
+    Class.forName("oracle.jdbc.driver.OracleDriver");
+    Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "tiger");
     Scanner sc = new Scanner(System.in);
 
     String uname = sc.next();
